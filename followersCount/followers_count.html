@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Counter</title>
 </head>
+<style>
+*{
+    background-color: #d1bfa7;
+}
+h1{
+    color : #9068be;
+}
+button{
+    
+    background-color: #4CAF50; /* Green */
+ border: none;
+ color: white;
+  padding: 15px 32px;
+ text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+
+}
+
+</style>
 <body>
     <h1>Interactive Counter</h1>
     <h2>Account Holder Name: Peter Parker </h2>
     <p>Followers: <span id = "countDisplay">0</span></p>
     <hr>
     <h2> Click one button to follow</h2>
-    <button onclick = "increaseCount()">Follow</button>
+    <button onclick = "increaseCount()">Follow</button><br><br>
+    <button onclick = "resetCount()"> Reset</button>
     <script src="./followers_count.js"></script>
 </body>
 </html>
